@@ -34,7 +34,7 @@ a{
 
 a:hover{
     color: #0A66C2;
-    border-top: 4px ;
+    border-top: 4px solid #0A66C2;
 }
 
 
@@ -117,12 +117,12 @@ a:hover{
 }
 
 .searchbar input[type=text] {
-    padding: 6px;
+    padding: 10px;
     border: 1px solid lightgray;
     margin-top: 8px;
-    margin-right: 16px;
     font-size: 17px;
     position: relative;
+    border-radius: 10px;
 }
 
 .btn-search{
@@ -153,15 +153,36 @@ a:hover{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 20px;
+    flex-basis: 500px;
+    padding: 10px;
+    }
 
+.popular-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px;
 }
 
+
 .popular_card {
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 20px;
+    flex-basis: 300px;
+    max-width: 600px;
+    max-height: 300px;
+    padding: 10px;
+}
+
+.popular-text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .all_accomodations{
@@ -185,26 +206,28 @@ a:hover{
 }
 img {
     border-radius: 5px 5px 0 0;
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 500px;
+    max-width: 500px;
+
 }
 
 .checked{
-    color:blue;
+    color: #0A66C2;
 }
 
 .accomodations{
-    background-color: lightgray;
-    border-radius: 5px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 50px;
 }
 
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-    max-height: 100vh;
 
+
+  [class^="cardrow-"]{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
 }
 
 .activity_content{
@@ -218,6 +241,7 @@ img {
 }
 
 .most_popular{
-    background-color: lightgray;
-    border-radius: 5px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 50px;
 }
