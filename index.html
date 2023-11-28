@@ -9,8 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://kit.fontawesome.com/ab1c72e7a7.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 <header>
@@ -26,19 +25,23 @@
     <h1>Find a place for your dream vacation</h1>
     <p>Downtown or in nature</p>
 
-    <input type="text">
-    <button>Search</button>
-
+<!--searchbar div including icon and search button, inline styling-->
+    <div class ="searchbar">
+    <button class="location-btn"><i class="fa-solid fa-location-dot" style="color: black"></i></button><input type="text" placeholder="Search">
+<button class="btn-search" type="submit">Search</button>
+    </div>
+    <!--filter section with icons and filter buttons ,inline styling-->
     <h2>Filters</h2>
-    <button>Low cost</button>
-    <button>Family-friendly</button>
-    <button>Romantic</button>
-    <button>Pets allowed</button>
+    <i class="fa-solid fa-money-bill-wave" style="color: #0A66C2"></i><button class="btn">Low cost</button>
+    <i class="fa-solid fa-child-reaching" style="color: #0A66C2"></i><button  class="btn">Family-friendly</button>
+    <i class="fa-solid fa-heart"style="color: #0A66C2" ></i><button class="btn">Romantic</button>
+    <i class="fa-solid fa-dog"style="color: #0A66C2" ></i><button class="btn">Pets allowed</button>
 
-    <p>More than 500 accomodations are available in this city</p>
+
+    <p><i class="fa-solid fa-circle-info" style="color: #0a66c2"></i> More than 500 accomodations are available in this city</p>
     <section class="all_accomodations">
     <section class="accomodations">
-      <h1>Accomodations in Marseille</h1>
+      <h2>Accomodations in Marseille</h2>
       <section class="content">
       <div class="card">
         <img src="assets/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" style="width: 100%">
@@ -120,11 +123,11 @@
 
 
 </section>
-<h2>Show More</h2>
+<h3>Show More</h3>
     </section>
 
     <section class="most_popular">
-      <h1>Most Popular</h1>
+      <h2>Most Popular</h2>
       <span class="fa fa-star"></span>
       <section class="content">
       <div class="popular_card">
@@ -174,7 +177,7 @@
     </section>
 
     <section class="activities">
-    <h1>Activities in Marseille</h1>
+    <h2>Activities in Marseille</h2>
       <section class="activity_content">
     <div class="activity_card">
       <img src="assets/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" style="width: 100%">
