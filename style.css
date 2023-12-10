@@ -6,8 +6,8 @@
 
 body{
     display: block;
-    margin-left:  50px;
-    margin-right:  50px;
+    margin-left:  100px;
+    margin-right:  100px;
     
    
 }
@@ -22,15 +22,21 @@ header{
 
 
 .logo img {
-    width: 100%;
+    width: 60%;
 }
 
-
+p{
+    font-size: 20px;
+}
 
 footer{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-evenly;
+    font-size: 20px;
+    margin-left: -100px;
+    margin-right: -100px;
+    
 }
 
 header a{
@@ -43,6 +49,7 @@ header a{
 header a:hover{
     color: #0A66C2;
     border-top: 4px solid #0065FC;
+    transition: 0.3s;
 }
 
 .filter-section{
@@ -61,9 +68,9 @@ header a:hover{
   color: #000000;
   cursor: pointer;
   display: inline-flex;
-  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: bold;
   justify-content: center;
   line-height: 40px;
   min-height: 40px;
@@ -90,7 +97,7 @@ header a:hover{
     padding: 15px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    
     margin: 4px 2px;
     border-radius: 50%;
     position: absolute;
@@ -112,10 +119,10 @@ header a:hover{
 }
 
 .searchbar input[type=text] {
-    padding: 10px;
+    padding: 15px;
     border: 1px solid lightgray;
-    margin-top: 8px;
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 20px;
     position: relative;
     border-radius: 0 0 5px 5px;
 }
@@ -123,13 +130,13 @@ header a:hover{
 .btn-search{
     background-color: #0065FC;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 20px 20px 0;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -141,12 +148,44 @@ header a:hover{
 .location-btn{
     background-color: #F2F2F2;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px 0 0 20px;
   color: white;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+
+.all_accomodations{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.accomodations a{
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    border-radius: 35px 35px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card-img{
+    height: 300px;
+}
+
+#accomodations{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 50px;
+    width: 70%;
 }
 
 .card {
@@ -169,29 +208,18 @@ header a:hover{
     }
 
 
-
-
-.all_accomodations{
+  [class^="cardrow-"]{
     display: flex;
-    gap: 50px;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    padding: 10px;
 }
 
-.accomodations a{
+[class^="cardrow-"] a{
     text-decoration: none;
     color: black;
-}
-
-.card img {
-    border-radius: 35px 35px 0 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.card-img{
-    height: 300px;
+    width: 31%;
 }
 
 
@@ -261,46 +289,27 @@ header a:hover{
     color: #0065FC;
 }
 
-#accomodations{
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    padding: 50px;
-    width: 70%;
-}
-
-
-  [class^="cardrow-"]{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 40px;
-    padding: 10px;
-}
-
-[class^="cardrow-"] a{
-    text-decoration: none;
-    color: black;
-    width: 31%;
-}
-
 
 
 
 .activity_content{
    display: flex;
-   gap: 30px;
+   gap: 50px;
    justify-content: center;
    padding-bottom: 50px;
+   font-size: 20px;
 }
 .activity-text{
-    padding: 15px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 
 }
+
 
 .activity-row1 img{
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 920px;
     border-radius: 40px 40px 0 0;
 
 }
@@ -308,11 +317,12 @@ header a:hover{
 .activity-row1 a{
     text-decoration: none;
     color: black;
+
 }
 .activity-row2 img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height:400px;
     border-radius: 40px 40px 0 0;
 }
 
@@ -322,9 +332,7 @@ header a:hover{
 }
 
 
-
-
-.activity_card1 {
+.activity_card {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -332,33 +340,24 @@ header a:hover{
                                              
 }
 
-.activity_card2 {
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 40px;
-    
-}
 
-.activity_card1:hover{
+
+.activity_card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 
-.activity_card2:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
 
 
 .activity-row1{
-    width: 100%;
+    width: 25%;
 }
 
 .activity-row2{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 30px;
+    width:25%;
+    gap: 50px;
+
 }
 
