@@ -22,7 +22,7 @@ header{
 
 
 .logo img {
-    width: 100px;
+    width: 100%;
 }
 
 
@@ -37,6 +37,7 @@ header a{
     text-decoration: none;
     color: black;
     padding: 13px 10px;
+    font-size: 20px;
 }
 
 header a:hover{
@@ -61,7 +62,7 @@ header a:hover{
   cursor: pointer;
   display: inline-flex;
   font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   justify-content: center;
   line-height: 40px;
@@ -154,6 +155,12 @@ header a:hover{
     transition: 0.3s;
     border-radius: 40px;
     padding: 5px;
+    font-size: 20px;
+    }
+
+    .card:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
     }
 
     .card-content{
@@ -163,22 +170,6 @@ header a:hover{
 
 
 
-.popular_card {
-    display: flex;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 40px;
-    width: 550px;
-    height: 210px;
-    padding: 5px;
-}
-
-.popular-text{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
 
 .all_accomodations{
     display: flex;
@@ -192,16 +183,23 @@ header a:hover{
 }
 
 .card img {
-    border-radius: 40px 40px 0 0;
-    width: 400px;
-    height: 200px;
+    border-radius: 35px 35px 0 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 
 }
+
+.card-img{
+    height: 300px;
+}
+
+
 .most_popular{
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 50px;
+    width: 30%;
 }
 .popular-title{
     display: flex;
@@ -212,27 +210,52 @@ header a:hover{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    justify-content: center;
+    gap: 50px;
 }
 
 .popular-container a{
     text-decoration: none;
     color: black;
 }
+.popular_card {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 40px;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+    height: 250px;
+    
+}
 
-.popular-container a:hover{
+
+.popular_card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 
 }
 
-.popular_card img{
-    border-radius: 40px 0 0 40px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+.popular-text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
 }
+
+
+
+.popular_card img{
+    border-radius: 35px 0 0 35px;
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
 
 .checked{
     color: #0065FC;
@@ -242,11 +265,13 @@ header a:hover{
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 50px;
+    width: 70%;
 }
 
 
   [class^="cardrow-"]{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 40px;
     padding: 10px;
@@ -255,12 +280,10 @@ header a:hover{
 [class^="cardrow-"] a{
     text-decoration: none;
     color: black;
+    width: 31%;
 }
 
-[class^="cardrow-"] a:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
-}
 
 
 .activity_content{
@@ -276,8 +299,8 @@ header a:hover{
 
 .activity-row1 img{
     object-fit: cover;
-    width: 450px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     border-radius: 40px 40px 0 0;
 
 }
@@ -288,8 +311,8 @@ header a:hover{
 }
 .activity-row2 img {
     object-fit: cover;
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 40px 40px 0 0;
 }
 
@@ -298,36 +321,44 @@ header a:hover{
     color: black;
 }
 
-.activity-row1 a:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
 
-}
 
-.activity-row2 a:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-
-}
-.activity_card {
+.activity_card1 {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 40px;
+                                             
+}
+
+.activity_card2 {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 40px;
+    
+}
+
+.activity_card1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.activity_card2:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 
-
 .activity-row1{
-    display: flex;
-    width: 500px;
+    width: 100%;
 }
 
 .activity-row2{
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    max-height: 200px;
-    object-fit: cover;
+    width: 100%;
     gap: 30px;
 }
 
