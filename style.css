@@ -73,16 +73,12 @@ header a:hover{
   font-weight: bold;
   justify-content: center;
   line-height: 50px;
-  min-height: 40px;
   min-width: 0px;
   padding: 0px;
   padding-left: 45px;
   padding-right: 20px;
   text-align: center;
   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
   position:relative;
   margin-left: 20px;
 }
@@ -360,4 +356,79 @@ header a:hover{
     gap: 50px;
 
 }
+
+
+@media screen and (max-width: 768px) {
+   
+
+  body{
+    margin: 0;
+  }
+
+  header {
+    flex-direction: column;
+    padding-left: 30%;
+    
+  }
+  .booki-motto{
+    
+  }
+
+  .searchbar{
+    justify-content: center;
+   
+  }
+
+  .filter-btn{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .all_accomodations{
+    display: flex;
+    flex-direction:column-reverse;
+  }
+
+  .activity_content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #accomodations{
+    width: 100%;
+    background-color: white;
+  }
+
+  [class^="cardrow-"]{
+    width: 100%;
+  }
+
+  [class^="cardrow-"] a{
+    width: 100%;
+  }
+
+
+
+  .most_popular{
+    width: 100%;
+    
+  }
+
+  .activity-row1{
+    width: 100%;
+    
+  }
+
+  .activity-row2{
+    width: 100%;
+  }
+
+  footer{
+    flex-direction: column;
+    padding-left: 20%;
+  }
+}
+    
+
+
 
