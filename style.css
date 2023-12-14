@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     
 }
 
@@ -18,7 +18,6 @@ header{
     padding: 1em;
     
 }
-
 
 
 .logo img {
@@ -39,6 +38,8 @@ footer{
     
 }
 
+
+
 header a{
     text-decoration: none;
     color: black;
@@ -54,8 +55,10 @@ header a:hover{
 
 .filter-section{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 30px;
+    gap: 20px;
 }
 
 /* CSS */
@@ -64,7 +67,6 @@ header a:hover{
   background-color: #ffff;
   border: 2px solid lightgray;
   border-radius: 100px;
-  box-sizing: border-box;
   color: #000000;
   cursor: pointer;
   display: inline-flex;
@@ -80,7 +82,6 @@ header a:hover{
   text-align: center;
   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   position:relative;
-  margin-left: 20px;
 }
 
 .filter-btn:hover{
@@ -93,7 +94,6 @@ header a:hover{
     padding: 15px;
     text-align: center;
     text-decoration: none;
-
     margin: 4px 2px;
     border-radius: 50%;
     position: absolute;
@@ -114,16 +114,18 @@ header a:hover{
     position: relative;
 }
 
-.searchbar input[type=text] {
+.searchbar input {
     padding: 15px;
     border: 1px solid lightgray;
     font-weight: 600;
     font-size: 20px;
     position: relative;
     border-radius: 0 0 5px 5px;
+    
+   
 }
 
-.btn-search{
+.btn-search1{
     background-color: #0065FC;
     border: none;
     border-radius: 0 20px 20px 0;
@@ -135,18 +137,38 @@ header a:hover{
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+  
 }
 
-.btn-search:hover{
+.btn-search1:hover{
     background-color: #2c51e6;
 }
+.btn-search2{
+    background-color: #0065FC;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+  
+}
+
+.btn-search2:hover{
+    background-color: #2c51e6;
+}
+
 
 .location-btn{
     background-color: #F2F2F2;
     border: none;
     border-radius: 20px 0 0 20px;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -250,7 +272,6 @@ header a:hover{
     border-radius: 40px;
     padding: 5px;
     font-size: 20px;
-    position: relative;
     height: 250px;
     
 }
@@ -266,6 +287,7 @@ header a:hover{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-bottom: 5px;
 
 }
 
@@ -284,8 +306,6 @@ header a:hover{
 .checked{
     color: #0065FC;
 }
-
-
 
 
 .activity_content{
@@ -356,76 +376,169 @@ header a:hover{
     gap: 50px;
 
 }
+@media screen and (max-width: 992px){
 
+    .all_accomodations{
+      display: flex;
+      flex-direction:column-reverse;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    
+    
+    .most_popular{
+      width: 100%;
+      padding: 30px;
+      
+    }
+    #accomodations{
+      width: 100%;
+      padding: 30px;
+        
+      
+    }
+    
+    [class^="cardrow-"]{
+      width: 100%;
+      gap: 20px;
+    }
+    
+    [class^="cardrow-"] a{
+      width: 100%;
+    }
+    
+   
+    .activity-row2{
+      width: 100%;
+    }
+    
+    footer{
+      flex-direction: column;
+      padding-left: 20%;
+
+    }
+    body{
+      margin: 0;
+    }
+    .intro-section{
+        margin: 20px;
+    }
+
+
+    .activity_content{
+        flex-wrap: wrap;
+     margin-right: 20px;
+      margin-left: 20px;
+    }
+    
+      .activity-row1{
+        width: 100%;
+      } 
+
+    .activity-row1 img{
+    height: 400px;
+}
+
+.activities-title{
+    margin: 20px;
+}
+}
 
 @media screen and (max-width: 768px) {
-   
+    
+    
+    .intro-section{
+        margin: 50px;
+    }
 
-  body{
-    margin: 0;
-  }
+    .intro-section h2{
+        font-size: 35px;
+    }
 
+    .intro-section p{
+        font-size: 25px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .filter-section h3{
+        font-size: 25px;
+    }
+
+    .filter-btn{
+        font-size: 20px;
+    }
+    
   header {
     flex-direction: column;
-    padding-left: 30%;
+    padding: 0;
     
+  }
+
+  .logo{
+    text-align: center;
+  }
+
+  .logo img{
+    width: 20%;
+    padding-top: 20px;
+  }
+
+  
+  nav{
+    display: flex;
+    text-align: center;
+  }
+
+  header a{
+    font-size: 25px;
+    width: 50%;
+  }
+
+  header a {
+    border-bottom: 4px solid #F2F2F2;
+  }
+
+  header a:hover{
+    color: #0A66C2;
+    border-bottom: 4px solid #0065FC;
+    border-top: 0;
+    transition: 0.3s;
   }
 
 
   .searchbar{
     justify-content: center;
+    position: relative;
    
   }
+  .searchbar input{
+    height: 63px;
+    position: relative;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .btn-search1{
+    display:none;
+  }
+
+  .btn-search2{
+    display: block;
+    padding: 20px;
+    position: absolute;
+    margin-left: 85%;
+   }
 
   .filter-btn{
     display: flex;
     flex-wrap: wrap;
   }
 
-  .all_accomodations{
-    display: flex;
-    flex-direction:column-reverse;
-  }
-
-  .activity_content{
-    display: flex;
-    flex-direction: column;
-  }
-
-  #accomodations{
-    width: 100%;
-    background-color: white;
-  }
-
-  [class^="cardrow-"]{
-    width: 100%;
-  }
-
-  [class^="cardrow-"] a{
-    width: 100%;
-  }
-
-
-
-  .most_popular{
-    width: 100%;
-    
-  }
-
-  .activity-row1{
-    width: 100%;
-    
-  }
-
-  .activity-row2{
-    width: 100%;
-  }
-
-  footer{
-    flex-direction: column;
-    padding-left: 20%;
-  }
+ 
 }
+
     
 
 
