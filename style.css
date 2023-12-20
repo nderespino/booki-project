@@ -21,7 +21,7 @@ header{
 
 
 .logo img {
-    width: 60%;
+    width: 40%;
 }
 
 p{
@@ -44,7 +44,7 @@ header a{
     text-decoration: none;
     color: black;
     padding: 13px 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 header a:hover{
@@ -146,12 +146,12 @@ header a:hover{
 .btn-search2{
     background-color: #0065FC;
     border: none;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
   color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   cursor: pointer;
   display: none;
@@ -237,7 +237,7 @@ header a:hover{
 [class^="cardrow-"] a{
     text-decoration: none;
     color: black;
-    width: 31%;
+    width: 30%;
 }
 
 
@@ -381,20 +381,34 @@ header a:hover{
     .all_accomodations{
       display: flex;
       flex-direction:column-reverse;
-      margin-left: 20px;
-      margin-right: 20px;
+      
+    }
+
+    #accomodations h2 {
+      margin: 20px;
+    }
+
+    #accomodations h1{
+      margin: 20px;
     }
     
+
+    .popular-container{
+      gap: 20px;
+      
+    }
     
     
     .most_popular{
       width: 100%;
       padding: 30px;
+      height: 50%;
+      
       
     }
     #accomodations{
       width: 100%;
-      padding: 30px;
+      padding: 10px;
         
       
     }
@@ -434,19 +448,29 @@ header a:hover{
     
       .activity-row1{
         width: 100%;
+      
+       
       } 
 
-    .activity-row1 img{
-    height: 400px;
+      
+
+  .activity-row1 img{
+    height: 350px;
 }
 
-.activities-title{
-    margin: 20px;
+
+
+  .activities-title{
+    margin: 30px;
 }
 }
 
 @media screen and (max-width: 768px) {
     
+
+  #accomodations{
+    background-color: white;
+  }
     
     .intro-section{
         margin: 50px;
@@ -485,7 +509,8 @@ header a:hover{
     padding-top: 20px;
   }
 
-  
+ 
+
   nav{
     display: flex;
     text-align: center;
@@ -514,10 +539,11 @@ header a:hover{
    
   }
   .searchbar input{
-    height: 63px;
+    height: 66px;
     position: relative;
-    width: 80%;
+    width: 70%;
     justify-content: center;
+    padding: 5px;
   }
 
   .btn-search1{
@@ -526,9 +552,9 @@ header a:hover{
 
   .btn-search2{
     display: block;
-    padding: 20px;
+    padding: 20px 20px;
     position: absolute;
-    margin-left: 85%;
+    margin-left: 80%;
    }
 
   .filter-btn{
