@@ -5,18 +5,22 @@
 
 body {
   display: block;
-  margin-left: 100px;
-  margin-right: 100px;
+ 
 }
 
-header {
+header  {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+
 
 .logo img {
   width: 40%;
+  
 }
 
 p {
@@ -33,7 +37,7 @@ footer {
 header a {
   text-decoration: none;
   color: black;
-  padding: 13px 20px;
+  padding: 13px 13px;
   font-size: 16px;
   
 }
@@ -42,6 +46,11 @@ header a:hover {
   color: #0a66c2;
   border-top: 4px solid #0065fc;
   transition: 0.3s;
+}
+
+.intro-section{
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .filter-section {
@@ -177,6 +186,8 @@ header a:hover {
   gap: 50px;
   justify-content: center;
   padding-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .accomodations a {
@@ -298,12 +309,18 @@ header a:hover {
   color: #0065fc;
 }
 
+.activities-title{
+  margin-left: 50px;
+}
+
 .activity_content {
   display: flex;
   gap: 50px;
   justify-content: center;
   padding-bottom: 50px;
   font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .activity-text {
   padding-left: 20px;
@@ -356,9 +373,24 @@ header a:hover {
   gap: 50px;
 }
 @media screen and (max-width: 992px) {
+
+  header{
+    margin-left: 0;
+    margin-right: 0;
+  }
   .all_accomodations {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .intro-section{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .all_accomodations{
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #accomodations h2 {
@@ -405,7 +437,7 @@ header a:hover {
     margin: 0;
   }
   .intro-section {
-    margin: 20px;
+    margin: 20px
   }
 
   .activity_content {
@@ -433,7 +465,7 @@ header a:hover {
   }
 
   .intro-section {
-    margin: 50px;
+    margin: 25px;
   }
 
   .intro-section h2 {
@@ -441,8 +473,8 @@ header a:hover {
   }
 
   .intro-section p {
-    font-size: 25px;
-    padding-bottom: 20px;
+    font-size: 20px;
+    padding-bottom: 5px;
     padding-top: 10px;
   }
 
@@ -452,6 +484,7 @@ header a:hover {
 
   .filter-btn {
     font-size: 20px;
+
   }
 
   header {
@@ -474,7 +507,7 @@ header a:hover {
   }
 
   header a {
-    font-size: 25px;
+    font-size: 20px;
     width: 50%;
   }
 
@@ -490,15 +523,12 @@ header a:hover {
   }
 
   .searchbar {
-    justify-content: center;
     position: relative;
   }
   .searchbar input {
     height: 66px;
     position: relative;
     width: 70%;
-    justify-content: center;
-    padding: 5px;
   }
 
   .btn-search1 {
@@ -509,11 +539,12 @@ header a:hover {
     display: block;
     padding: 20px 20px;
     position: absolute;
-    margin-left: 80%;
+    margin-left: 75%;
   }
 
   .filter-section h3{
     width: 80%;
+    margin-top: 0;
   }
 
   .filter-btn {
