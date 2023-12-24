@@ -52,7 +52,7 @@ header a:hover {
   margin-left: 50px;
   margin-right: 50px;
 }
-
+/* styling for filter icon buttons */
 .filter-section {
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +61,6 @@ header a:hover {
   gap: 20px;
 }
 
-/* CSS */
 .filter-btn {
   align-items: center;
   background-color: #ffff;
@@ -75,8 +74,6 @@ header a:hover {
   font-weight: bold;
   justify-content: center;
   line-height: 50px;
-  min-width: 0px;
-  padding: 0px;
   padding-left: 60px;
   padding-right: 20px;
   text-align: center;
@@ -104,10 +101,9 @@ header a:hover {
   color: #0065fc;
 }
 
-.dot-icon {
-  color: #000000;
-}
 
+
+/* styling for seachbar/ location icon/ search button */
 .searchbar {
   display: flex;
   position: relative;
@@ -120,6 +116,10 @@ header a:hover {
   font-size: 20px;
   position: relative;
   border-radius: 0 0 5px 5px;
+}
+
+.dot-icon {
+  color: #000000;
 }
 
 .btn-search1 {
@@ -180,7 +180,7 @@ header a:hover {
 .unchecked{
   color: #f2f2f2;
 }
-
+/* styling to have both accomodations and most popular sections in line with eachother */
 .all_accomodations {
   display: flex;
   gap: 50px;
@@ -190,6 +190,8 @@ header a:hover {
   margin-right: 50px;
 }
 
+
+/* accomodations section styling */
 .accomodations a {
   text-decoration: none;
   color: black;
@@ -250,6 +252,8 @@ header a:hover {
   width: 30%;
 }
 
+
+/* most popular section styling */
 .star-icon{
   color: black;
 }
@@ -304,11 +308,12 @@ header a:hover {
   height: 100%;
   object-fit: cover;
 }
-
+/* styling for rating star color */
 .checked {
   color: #0065fc;
 }
 
+/* activities section styling */
 .activities-title{
   margin-left: 50px;
 }
@@ -372,6 +377,8 @@ header a:hover {
   width: 25%;
   gap: 50px;
 }
+
+/* tablet media breakpoint */
 @media screen and (max-width: 992px) {
 
   header{
@@ -458,7 +465,7 @@ header a:hover {
     margin: 30px;
   }
 }
-
+/* mobile media breakpoint */
 @media screen and (max-width: 768px) {
   #accomodations {
     background-color: white;
