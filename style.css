@@ -12,7 +12,7 @@ header  {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-right: 50px;
 }
 
@@ -431,7 +431,7 @@ header a:hover {
 
   footer {
     flex-direction: column;
-    padding-left: 20%;
+    padding-left: 5%;
   }
   body {
     margin: 0;
@@ -551,4 +551,5 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
   }
+
 }
