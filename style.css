@@ -181,7 +181,7 @@ header a:hover {
   color: #f2f2f2;
 }
 /* styling to have both accomodations and most popular sections in line with eachother */
-.all_accomodations {
+.all_accommodations {
   display: flex;
   gap: 50px;
   justify-content: center;
@@ -192,7 +192,7 @@ header a:hover {
 
 
 /* accomodations section styling */
-.accomodations a {
+.accommodations a {
   text-decoration: none;
   color: black;
 }
@@ -208,7 +208,7 @@ header a:hover {
   height: 300px;
 }
 
-#accomodations {
+#accommodations {
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 50px;
@@ -385,7 +385,7 @@ header a:hover {
     margin-left: 0;
     margin-right: 0;
   }
-  .all_accomodations {
+  .all_accommodations {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -395,16 +395,16 @@ header a:hover {
     margin-right: 0;
   }
 
-  .all_accomodations{
+  .all_accommodations{
     margin-left: 0;
     margin-right: 0;
   }
 
-  #accomodations h2 {
+  #accommodations h2 {
     margin: 20px;
   }
 
-  #accomodations h1 {
+  #accommodations h1 {
     margin: 20px;
   }
 
@@ -418,7 +418,7 @@ header a:hover {
     height: 50%;
     border-radius: 0;
   }
-  #accomodations {
+  #accommodations {
     width: 100%;
     padding: 10px;
   }
@@ -467,7 +467,7 @@ header a:hover {
 }
 /* mobile media breakpoint */
 @media screen and (max-width: 768px) {
-  #accomodations {
+  #accommodations {
     background-color: white;
   }
 
@@ -483,9 +483,14 @@ header a:hover {
   .card-content{
     bottom: 40px;
   }
+  
 
   .popular_card img{
     width: 40%;
+  }
+
+  .popular-text{
+    padding-right: 15px;
   }
 
   .intro-section {
@@ -577,3 +582,23 @@ header a:hover {
   }
 
 }
+
+
+@media screen and (max-width: 500px){
+.card{
+  height: 280px;
+}
+
+.card-content{
+  bottom: 25px;
+  font-size: 18px;
+}
+
+.card img{
+  height: 50%;
+}
+
+
+};
+  
+
