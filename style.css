@@ -678,7 +678,7 @@ font-size: 16px;
   padding-right: 5px;
   bottom: 14px;
   font-size: 14px;
-  padding-left: 140px;
+  padding-left: 160px;
  } 
 
  .popular-text p {
@@ -717,6 +717,12 @@ font-size: 16px;
 
   
 }
+@media screen and (max-width: 360px){
+.popular-text{
+  padding-left: 140px;
+}
+}
+
 
 
 @media screen and (max-width: 300px){
