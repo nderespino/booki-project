@@ -602,11 +602,15 @@ header a:hover {
   padding: 20px;
 }
 .popular-text{
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1;
   bottom: 12px;
   position: relative;
-  padding-left: 160px;
+  padding-left: 170px;
+}
+
+.popular-text p{
+  font-size: 15px;
 }
 
 .popular_card{
@@ -624,7 +628,39 @@ position: absolute;
 }
 
 
+.intro-section h2{
+  font-size: 30px;
 }
+
+.intro-section p{
+  font-size: 18px;
+}
+
+.filter-btn {
+font-size: 16px;
+  line-height: 50px;
+  padding-left: 60px;
+  padding-right: 15px;
+  
+    }
+  }
+
+.filter-btn:hover {
+  background-color: #f2f2f2;
+}
+.filter-icons {
+   padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 50%;
+  position: absolute;
+  margin-right: 100%;
+  width: 60px;
+}
+
+
+
 
 @media screen and (max-width: 400px){
 .popular-title{
@@ -638,6 +674,7 @@ position: absolute;
   padding-right: 5px;
   bottom: 14px;
   font-size: 14px;
+  padding-left: 140px;
  } 
 
  .popular-text p {
@@ -651,6 +688,28 @@ position: absolute;
  .popular_card img{
   height: 140px;
  }
+
+ .filter-btn {
+  font-size: 16px;
+  line-height: 50px;
+  padding-left: 60px;
+  padding-right: 20px;
+  
+    }
+  
+  .filter-btn:hover {
+    background-color: #f2f2f2;
+  }
+  .filter-icons {
+     padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 100%;
+    width: 60px;
+  }
 
   
 }
