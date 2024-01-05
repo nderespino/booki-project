@@ -597,12 +597,16 @@ header a:hover {
 .card img{
   height: 50%;
 }
+
+.most_popular{
+  padding: 20px;
+}
 .popular-text{
   font-size: 16px;
   line-height: 1;
-  bottom: 10px;
+  bottom: 12px;
   position: relative;
-  padding-left: 200px;
+  padding-left: 160px;
 }
 
 .popular_card{
@@ -614,7 +618,7 @@ header a:hover {
 }
 .popular_card img{
 border-radius: 25px 0 0 25px;
-width: 45%;
+width: 40%;
 height: 170px;
 position: absolute;
 }
@@ -623,11 +627,30 @@ position: absolute;
 }
 
 @media screen and (max-width: 400px){
+.popular-title{
+  font-size: 14px;
+}
+  .most_popular{
+    padding: 10px;
+  }
  .popular-text{
   padding-left: 150px;
-  bottom: 10px;
-  font-size: 16px;
+  padding-right: 5px;
+  bottom: 14px;
+  font-size: 14px;
  } 
+
+ .popular-text p {
+  font-size: 14px;
+ }
+
+ .popular_card{
+  height: 150px;
+ }
+
+ .popular_card img{
+  height: 140px;
+ }
 
   
 }
